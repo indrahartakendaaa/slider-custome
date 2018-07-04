@@ -77,6 +77,23 @@
     #slider-horizontal-overflow .responsive {
       margin-right: -200px;
     }
+
+    .slider-for {
+      position: relative;
+      width: 33%;
+    }
+    .slider-for h3 {
+      width: 100%;
+      border: 3px red solid;
+      height: 500px;
+      bottom: 0;
+      top: 0;
+      z-index: 9999;
+    }
+
+    .slider-nav {
+      margin-top: -500px;
+    }
   </style>
   <body>
 
@@ -89,6 +106,7 @@
     <section class="py-main" id="slider-1">
       <div class="container">
         <h2>Slider Vertical</h2>
+        <h3>V.1</h3>
           <div class="slider mt-3">
             <div>
               <div class="row row-5">
@@ -169,6 +187,87 @@
           </div>
       </div>
     </section>
+    <section class="py-main" id="slider-1">
+      <div class="container">
+        <h3>V.2</h3>
+          <div class="slider mt-3">
+            <div>
+              <div class="row row-5">
+                <div class="col-md-4">
+                  <img src="http://placehold.it/96.png" alt="">
+                </div>
+                <div class="col-md-8">
+                  <div class="pr-5 information">
+                    <h2>Lorem ipsum dolor sit amet elit sed do eiusmod
+                    tempor ut labore et.</h2>
+                    <p class="text-gray-200">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.</p>
+                    <button class="btn btn-primary">Google Play</button>
+                    <button class="btn btn-primary">App Store</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="row row-5">
+                <div class="col-md-4">
+                  <img src="http://via.placeholder.com/350x150" alt="">
+                </div>
+                <div class="col-md-8">
+                  <div class="pr-5 information">
+                    <h2>Excepteur sint occaecat cupidatat non
+                    proident sunt.</h2>
+                    <p class="text-gray-200">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="row row-5">
+                <div class="col-md-4">
+                  <img src="http://placehold.it/96.png" alt="">
+                </div>
+                <div class="col-md-8">
+                  <div class="pr-5 information">
+                    <h2>Lorem ipsum dolor sit amet elit sed do eiusmod
+                    tempor ut labore et.</h2>
+                    <p class="text-gray-200"> Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <button class="btn btn-primary">Google Play</button>
+                    <button class="btn btn-primary">App Store</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="row row-5">
+                <div class="col-md-4">
+                  <img src="http://via.placeholder.com/350x150" alt="">
+                </div>
+                <div class="col-md-8">
+                  <div class="pr-5 information">
+                    <h2>Duis aute irure dolor in reprehenderit in voluptate velit/</h2>
+                    <p class="text-gray-200">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
 
     <section class="py-main mt-6" id="slider-horizontal-overflow">
       <div class="container">
@@ -220,6 +319,45 @@
             <div>
               <img src="http://via.placeholder.com/350x150" alt="">
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-main">
+      <div class="container">
+        <div class="mobile slider-for">
+          <div>
+            <h3>1</h3>
+          </div>
+          <div>
+            <h3>2</h3>
+          </div>
+          <div>
+            <h3>3</h3>
+          </div>
+          <div>
+            <h3>4</h3>
+          </div>
+          <div>
+            <h3>5</h3>
+          </div>
+        </div>
+        <div class="mobile slider-nav">
+          <div>
+            <h3>1</h3>
+          </div>
+          <div>
+            <h3>2</h3>
+          </div>
+          <div>
+            <h3>3</h3>
+          </div>
+          <div>
+            <h3>4</h3>
+          </div>
+          <div>
+            <h3>5</h3>
           </div>
         </div>
       </div>
@@ -291,6 +429,21 @@
               // instead of a settings object
             ]
           });
+
+           $('.slider-for').slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+              fade: true,
+              asNavFor: '.slider-nav'
+            });
+            $('.slider-nav').slick({
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              asNavFor: '.slider-for',
+              dots: true,
+              focusOnSelect: true
+            });
 
       });
 
