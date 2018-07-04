@@ -301,24 +301,6 @@
             <div>
               <img src="http://via.placeholder.com/350x150" alt="">
             </div>
-            <div>
-              <img src="http://placehold.it/96.png" alt="">
-            </div>
-            <div>
-              <img src="http://via.placeholder.com/350x150" alt="">
-            </div>
-            <div>
-              <img src="http://placehold.it/96.png" alt="">
-            </div>
-            <div>
-              <img src="http://via.placeholder.com/350x150" alt="">
-            </div>
-            <div>
-              <img src="http://placehold.it/96.png" alt="">
-            </div>
-            <div>
-              <img src="http://via.placeholder.com/350x150" alt="">
-            </div>
           </div>
         </div>
       </div>
@@ -400,6 +382,8 @@
             speed: 300,
             slidesToShow: 3,
             slidesToScroll: 3,
+            autoplay: true,
+            autoplaySpeed: 3000,
             responsive: [
               {
                 breakpoint: 1024,
