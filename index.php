@@ -74,25 +74,107 @@
       object-fit: cover;
     }
 
-    #slider-horizontal-overflow .responsive {
-      margin-right: -200px;
+    .responsive {
+      padding-left: 150px;
+      margin-right: -100px;
     }
 
-    .slider-for {
+    .responsive-items {
+      background-color: red;
+      margin: 0px 20px 20px 20px;
+      height: 300px;
+      transition: all .3s ease;
+      position: relative;
+    }
+
+    .responsive-items:hover {
+      box-shadow: 0px 5px 20px #aaa;
+      transition: all .3s ease;
+    }
+
+    .hover {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      background: white;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      padding: 10px;
+      transition: all .3s ease;
+    }
+
+    .responsive-items:hover .hover {
+      visibility: visible;
+      opacity: 1;
+      transition: all .3s ease;
+    }
+
+    .slider-horizontal-v2 {
+      padding-left: 150px;
+      margin-right: -100px;
+    }
+
+    .slider-horizontal-v2 h3 {
+      height: 300px;
+    }
+
+    .slider-horizontal-for h3 {
+      background: blue;
+      color: #fff;
+      margin-left: 20px;
+    }
+
+    .slider-horizontal-nav h3 {
+      background-color: red;
+      margin: 0px 20px;
+      color: #fff;
+    }
+
+    .mockup {
+      position: relative;
+    }
+
+    .mockup img {
+      height: 650px;
+      background: white;
+      position: absolute;
+      z-index: 9;
+
+    }
+
+    #slider-phone .slider-for {
       position: relative;
       width: 33%;
-    }
-    .slider-for h3 {
-      width: 100%;
-      border: 3px red solid;
-      height: 500px;
-      bottom: 0;
-      top: 0;
-      z-index: 9999;
+      z-index: 999;
     }
 
-    .slider-nav {
-      margin-top: -500px;
+    #slider-phone .slider-for h3 {
+      background: blue;
+      width: 260px;
+      height: 530px;
+      margin-left: 40px;
+      margin-top: 70px;
+    }
+
+    #slider-phone .slider-nav {
+       width: 92%;
+       float: right;
+       margin-top: -450px;
+    }
+
+    #slider-phone .slider-nav h3 {
+      background: red;
+      margin: 0px 10px;
+      height: 370px;
+      opacity: .4;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+       display:none;
     }
   </style>
   <body>
@@ -269,78 +351,157 @@
       </div>
     </section>
 
-    <section class="py-main mt-6" id="slider-horizontal-overflow">
+    <section class="py-main mt-6" style="overflow: hidden;">
       <div class="container">
-        <h2>Slider Horizontal Full Width</h2>
+        <h2>Slider Horizontal</h2>
+        <h3>V.1</h3>
       </div>
-      <div class="row mt-3">
-        <div class="col-md-5">
-          <div class="row">
-            <div class="col-md-9 offset-md-3">
-              <div class="pl-3">
-                <h2>Pay</h2>
-                <p class="font-size-sm text-gray-200">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
+      <div class="responsive" id="responsive-v1">
+        <div class="responsive-items">
+          <h3>1</h3>
+          <div class="hover">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="responsive-items">
+          <h3>2</h3>
+          <div class="hover">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="responsive-items">
+          <h3>3</h3>
+          <div class="hover">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="responsive-items">
+          <h3>4</h3>
+          <div class="hover">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="responsive-items">
+          <h3>5</h3>
+          <div class="hover">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="responsive-items">
+          <h3>6</h3>
+          <div class="hover">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="responsive-items">
+          <h3>7</h3>
+          <div class="hover">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="responsive-items">
+          <h3>8</h3>
+          <div class="hover">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h3>V.2</h3>
+      </div>
+      <div class="slider-horizontal-v2">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="slider-horizontal-for">
+              <div>
+                <h3>1</h3>
+              </div>
+              <div>
+                <h3>2</h3>
+              </div>
+              <div>
+                <h3>3</h3>
+              </div>
+              <div>
+                <h3>4</h3>
+              </div>
+              <div>
+                <h3>5</h3>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-7">
-          <div class="responsive">
-            <div>
-              <img src="http://placehold.it/96.png" alt="">
-            </div>
-            <div>
-              <img src="http://via.placeholder.com/350x150" alt="">
-            </div>
-            <div>
-              <img src="http://placehold.it/96.png" alt="">
-            </div>
-            <div>
-              <img src="http://via.placeholder.com/350x150" alt="">
+          <div class="col-md-9">
+            <div class="slider-horizontal-nav">
+              <div>
+                <h3>1</h3>
+              </div>
+              <div>
+                <h3>2</h3>
+              </div>
+              <div>
+                <h3>3</h3>
+              </div>
+              <div>
+                <h3>4</h3>
+              </div>
+              <div>
+                <h3>5</h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-main">
+    <section class="py-main" id="slider-phone">
       <div class="container">
-        <div class="mobile slider-for">
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
+        <div class="mockup">
+          <img src="<?php echo $prefix;?>assets/img/iphone.png">
         </div>
-        <div class="mobile slider-nav">
-          <div>
-            <h3>1</h3>
+        <div>
+          <div class="slider-for">
+            <div>
+              <h3>1</h3>
+            </div>
+            <div>
+              <h3>2</h3>
+            </div>
+            <div>
+              <h3>3</h3>
+            </div>
+            <div>
+              <h3>4</h3>
+            </div>
+            <div>
+              <h3>5</h3>
+            </div>
           </div>
-          <div>
-            <h3>2</h3>
+          <div class="slider-nav">
+            <div>
+              <h3>1</h3>
+            </div>
+            <div>
+              <h3>2</h3>
+            </div>
+            <div>
+              <h3>3</h3>
+            </div>
+            <div>
+              <h3>4</h3>
+            </div>
+            <div>
+              <h3>5</h3>
+            </div>
           </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
+          <div class="clearfix"></div>
         </div>
       </div>
     </section>
@@ -378,12 +539,10 @@
 
         $('.responsive').slick({
             dots: true,
-            infinite: false,
+            infinite: true,
             speed: 300,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            autoplay: true,
-            autoplaySpeed: 3000,
+            slidesToShow: 4,
+            slidesToScroll: 1,
             responsive: [
               {
                 breakpoint: 1024,
@@ -408,11 +567,23 @@
                   slidesToScroll: 1
                 }
               }
-              // You can unslick at a given breakpoint now by adding:
-              // settings: "unslick"
-              // instead of a settings object
             ]
           });
+
+            $('.slider-horizontal-for').slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+              fade: true,
+              asNavFor: '.slider-horizontal-nav'
+            });
+            $('.slider-horizontal-nav').slick({
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              asNavFor: '.slider-horizontal-for',
+              dots: true,
+              focusOnSelect: true
+            });
 
            $('.slider-for').slick({
               slidesToShow: 1,
@@ -422,7 +593,7 @@
               asNavFor: '.slider-nav'
             });
             $('.slider-nav').slick({
-              slidesToShow: 3,
+              slidesToShow: 4,
               slidesToScroll: 1,
               asNavFor: '.slider-for',
               dots: true,
