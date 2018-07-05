@@ -465,6 +465,9 @@
 
     <section class="py-main" id="slider-phone">
       <div class="container">
+        <h2>Slider Mockup</h2>
+      </div>
+      <div class="container">
         <div class="mockup">
           <img src="<?php echo $prefix;?>assets/img/iphone.png">
         </div>
