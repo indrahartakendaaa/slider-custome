@@ -157,6 +157,7 @@
       height: 530px;
       margin-left: 40px;
       margin-top: 70px;
+      color: #fff;
     }
 
     #slider-phone .slider-nav {
@@ -170,6 +171,7 @@
       margin: 0px 10px;
       height: 370px;
       opacity: .4;
+      color: #fff;
     }
 
     .slick-prev:before,
