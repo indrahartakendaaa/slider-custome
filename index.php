@@ -133,43 +133,23 @@
       color: #fff;
     }
 
-    .mockup {
-      position: relative;
+    #slider-phone {
+      overflow: hidden;
     }
 
-    .mockup img {
-      height: 650px;
-      background: white;
-      position: absolute;
-      z-index: 9;
-
-    }
-
-    #slider-phone .slider-for {
-      position: relative;
-      width: 33%;
-      z-index: 999;
-    }
-
-    #slider-phone .slider-for h3 {
-      background: blue;
-      width: 260px;
-      height: 530px;
-      margin-left: 40px;
-      margin-top: 70px;
-      color: #fff;
+    #slider-phone .slider-for img {
+      width: 300px;
     }
 
     #slider-phone .slider-nav {
-       width: 92%;
-       float: right;
-       margin-top: -450px;
+      margin-left: -200px;
+      margin-top: 120px;
     }
 
     #slider-phone .slider-nav h3 {
       background: red;
       margin: 0px 10px;
-      height: 370px;
+      height: 340px;
       opacity: .4;
       color: #fff;
     }
@@ -465,48 +445,80 @@
 
     <section class="py-main" id="slider-phone">
       <div class="container">
-        <h2>Slider Mockup</h2>
+        <h2>Slider Mockup</h2> 
       </div>
-      <div class="container">
-        <div class="mockup">
-          <img src="<?php echo $prefix;?>assets/img/iphone.png">
-        </div>
-        <div>
-          <div class="slider-for">
-            <div>
-              <h3>1</h3>
+      <div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 order-last">
+              <div class="slider-nav">
+                <div>
+                  <h3>1</h3>
+                </div>
+                <div>
+                  <h3>2</h3>
+                </div>
+                <div>
+                  <h3>3</h3>
+                </div>
+                <div>
+                  <h3>4</h3>
+                </div>
+                <div>
+                  <h3>5</h3>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3>2</h3>
-            </div>
-            <div>
-              <h3>3</h3>
-            </div>
-            <div>
-              <h3>4</h3>
-            </div>
-            <div>
-              <h3>5</h3>
+            <div class="col-md-6">
+              <div class="slider-for">
+                <div>
+                    <div class="float-left" style="width: 45%;">
+                      <h2>Test 1</h2>
+                    </div>
+                    <div class="float-right" style="width:50%;">
+                      <img src="<?php echo $prefix;?>assets/img/iphone.png" alt="">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div>
+                    <div class="float-left" style="width: 45%;">
+                      <h2>Test 2</h2>
+                    </div>
+                    <div class="float-right" style="width:50%;">
+                      <img src="<?php echo $prefix;?>assets/img/iphone.png" alt="">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div>
+                    <div class="float-left" style="width: 45%;">
+                      <h2>Test 3</h2>
+                    </div>
+                    <div class="float-right" style="width:50%;">
+                      <img src="<?php echo $prefix;?>assets/img/iphone.png" alt="">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div>
+                    <div class="float-left" style="width: 45%;">
+                      <h2>Test 4</h2>
+                    </div>
+                    <div class="float-right" style="width:50%;">
+                      <img src="<?php echo $prefix;?>assets/img/iphone.png" alt="">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div>
+                    <div class="float-left" style="width: 45%;">
+                      <h2>Test 5</h2>
+                    </div>
+                    <div class="float-right" style="width:50%;">
+                      <img src="<?php echo $prefix;?>assets/img/iphone.png" alt="">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="slider-nav">
-            <div>
-              <h3>1</h3>
-            </div>
-            <div>
-              <h3>2</h3>
-            </div>
-            <div>
-              <h3>3</h3>
-            </div>
-            <div>
-              <h3>4</h3>
-            </div>
-            <div>
-              <h3>5</h3>
-            </div>
-          </div>
-          <div class="clearfix"></div>
         </div>
       </div>
     </section>
